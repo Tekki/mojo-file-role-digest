@@ -1,1 +1,0 @@
-# mojo-file-role-digest
