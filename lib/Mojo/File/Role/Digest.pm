@@ -43,7 +43,7 @@ sub _calcdigest ($self, $module, $fn = 'hexdigest') {
 
 =head1 NAME
 
-Mojo::File::Role::Digest, a role for Mojo::File to calculate digests
+Mojo::File::Role::Digest - A role for Mojo::File to calculate digests
 
 =head1 SYNOPSIS
 
