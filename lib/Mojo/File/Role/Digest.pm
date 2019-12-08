@@ -1,6 +1,8 @@
 package Mojo::File::Role::Digest;
 use Mojo::Base -strict, -role, -signatures;
 
+our $VERSION = '0.01';
+
 requires 'open';
 
 use Carp 'croak';
