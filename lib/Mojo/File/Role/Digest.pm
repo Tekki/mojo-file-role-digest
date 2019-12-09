@@ -58,11 +58,12 @@ Mojo::File::Role::Digest - A role for Mojo::File to calculate digests
 
     $file->md5_sum;
     $file->quickxor_hash;  # requires Digest::QuickXor
+    $file->sha1_sum;
     $file->sha256_sum;
 
 =head1 DESCRIPTION
 
-Mojo::File::Role::Digest is a role for L<Mojo::File> to calculate MD5, SHA1, SHA256, and QuickXor digests.
+L<Mojo::File::Role::Digest> is a role for L<Mojo::File> to calculate MD5, SHA1, SHA256, and QuickXor digests.
 
 =head1 APPLY ROLE
 
@@ -116,6 +117,6 @@ This program is free software, you can redistribute it and/or modify it under th
 
 =head1 SEE ALSO
 
-L<Mojo::File>, L<Mojo::Base>, L<Digest::MD5>, L<Digest::QuickXor>, L<Digest::SHA>.
+L<Mojo::File>, L<Mojo::Base>, L<Role::Tiny>, L<Digest::MD5>, L<Digest::QuickXor>, L<Digest::SHA>.
 
 =cut
