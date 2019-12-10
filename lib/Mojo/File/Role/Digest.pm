@@ -1,7 +1,7 @@
 package Mojo::File::Role::Digest;
 use Mojo::Base -strict, -role, -signatures;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 requires 'open';
 
