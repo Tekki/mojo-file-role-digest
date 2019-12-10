@@ -1,6 +1,6 @@
 # NAME
 
-Mojo::File::Role::Digest, a role for Mojo::File to calculate digests
+Mojo::File::Role::Digest - A role for Mojo::File to calculate digests
 
 # SYNOPSIS
 
@@ -15,11 +15,12 @@ Mojo::File::Role::Digest, a role for Mojo::File to calculate digests
 
     $file->md5_sum;
     $file->quickxor_hash;  # requires Digest::QuickXor
+    $file->sha1_sum;
     $file->sha256_sum;
 
 # DESCRIPTION
 
-Mojo::File::Role::Digest is a role for [Mojo::File](https://metacpan.org/pod/Mojo%3A%3AFile) to calculate MD5, SHA1, SHA256, and QuickXor digests.
+[Mojo::File::Role::Digest](https://metacpan.org/pod/Mojo%3A%3AFile%3A%3ARole%3A%3ADigest) is a role for [Mojo::File](https://metacpan.org/pod/Mojo%3A%3AFile) to calculate MD5, SHA1, SHA256, and QuickXor digests.
 
 # APPLY ROLE
 
@@ -73,4 +74,4 @@ This program is free software, you can redistribute it and/or modify it under th
 
 # SEE ALSO
 
-[Mojo::File](https://metacpan.org/pod/Mojo%3A%3AFile), [Mojo::Base](https://metacpan.org/pod/Mojo%3A%3ABase), [Digest::MD5](https://metacpan.org/pod/Digest%3A%3AMD5), [Digest::QuickXor](https://metacpan.org/pod/Digest%3A%3AQuickXor), [Digest::SHA](https://metacpan.org/pod/Digest%3A%3ASHA).
+[Mojo::File](https://metacpan.org/pod/Mojo%3A%3AFile), [Mojo::Base](https://metacpan.org/pod/Mojo%3A%3ABase), [Role::Tiny](https://metacpan.org/pod/Role%3A%3ATiny), [Digest::MD5](https://metacpan.org/pod/Digest%3A%3AMD5), [Digest::QuickXor](https://metacpan.org/pod/Digest%3A%3AQuickXor), [Digest::SHA](https://metacpan.org/pod/Digest%3A%3ASHA).
