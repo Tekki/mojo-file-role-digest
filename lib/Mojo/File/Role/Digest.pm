@@ -34,7 +34,7 @@ sub sha256_sum ($self) {
 # internal methods
 
 sub _calcdigest ($self, $module, $fn = 'hexdigest') {
-  return $module->addfile($self->open('<'))->$fn;
+  return -f $self ? $module->addfile($self->open('<'))->$fn : '';
 }
 
 1;
@@ -64,6 +64,8 @@ Mojo::File::Role::Digest - A role for Mojo::File to calculate digests
 =head1 DESCRIPTION
 
 L<Mojo::File::Role::Digest> is a role for L<Mojo::File> to calculate MD5, SHA1, SHA256, and QuickXor digests.
+
+If the path isn't an existing file, all methods return an empty string C<''>.
 
 =head1 APPLY ROLE
 

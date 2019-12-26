@@ -1,5 +1,8 @@
 Revision history for perl distribution Mojo-File-Role-Digest
 
+0.04 Not Released
+ - Return empty string if path isn't an existing file
+
 0.03 2019-12-12T06:32:45+0100
  - Set required Mojolicious version to 8.18
    Error reported by Slaven Rezić (#3)
