@@ -1,7 +1,7 @@
 package Mojo::File::Role::Digest;
 use Mojo::Base -strict, -role, -signatures;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 requires 'open';
 
@@ -113,7 +113,7 @@ Returns the SHA256 sum of the file in hexadecimal form. See L<Digest::SHA/hexdig
 
 =head1 AUTHOR & COPYRIGHT
 
-© 2019 by Tekki (Rolf Stöckli).
+© 2019–2020 by Tekki (Rolf Stöckli).
 
 This program is free software, you can redistribute it and/or modify it under the terms of the Artistic License version 2.0.
 

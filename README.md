@@ -22,6 +22,8 @@ Mojo::File::Role::Digest - A role for Mojo::File to calculate digests
 
 [Mojo::File::Role::Digest](https://metacpan.org/pod/Mojo%3A%3AFile%3A%3ARole%3A%3ADigest) is a role for [Mojo::File](https://metacpan.org/pod/Mojo%3A%3AFile) to calculate MD5, SHA1, SHA256, and QuickXor digests.
 
+If the path isn't an existing file, all methods return an empty string `''`.
+
 # APPLY ROLE
 
     use Mojo::File 'path';
@@ -68,7 +70,7 @@ Returns the SHA256 sum of the file in hexadecimal form. See ["hexdigest" in Dige
 
 # AUTHOR & COPYRIGHT
 
-© 2019 by Tekki (Rolf Stöckli).
+© 2019–2020 by Tekki (Rolf Stöckli).
 
 This program is free software, you can redistribute it and/or modify it under the terms of the Artistic License version 2.0.
 
