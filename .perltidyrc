@@ -1,12 +1,12 @@
-  -pbp
-  -l=100
-  -mbl=2
-  -i=2
-  -ci=2
-  -vt=0
-  -pt=2
-  -bt=2
-  -sbt=2
-  -isbc
-  -asc
-  -ce
+-pbp     # start with Perl Best Practices
+-l=100   # 100 characters per line
+-mbl=2   # no more than 2 blank lines
+-i=2     # indentation is 2 columns
+-ci=2    # continuation indentation is 2 columns
+-vt=0    # less vertical tightness
+-pt=2    # high parenthesis tightness
+-bt=2    # high brace tightness
+-sbt=2   # high square bracket tightness
+-isbc    # don't indent comments without leading space
+-asc     # add missing optional semicolons
+-ce      # cuddled else style
